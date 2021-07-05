@@ -1,0 +1,184 @@
+.cabeça {
+    background-color: rgb(128, 63, 17);
+    text-align: right;
+}
+
+.active {
+    background-color: sandybrown !important;
+    color: white !important;
+}
+
+.cabeça ul li a {
+    color: sandybrown;
+}
+.cabeça ul li a:hover {
+    color: white;
+}
+.nav-link {
+    color: sandybrown;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+h1 {
+    font-style: italic;
+    color: sandybrown;
+    padding-right: 8%;
+}
+
+header {
+    background-color: rgb(128, 63, 17);
+    width: 100%;
+
+}
+
+.forms {
+    border: solid rgb(128, 63, 17) 2px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.61);
+    background-color: rgb(245, 243, 240);
+}
+.imgs {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.61);
+}
+
+section {
+    color: rgb(128, 63, 17);
+}
+
+@media screen and (min-width: 0px) {
+    header {
+        padding-bottom: 30%;
+    }
+    body {
+        width: 96.8%;
+    }
+    #pages {
+        padding-left: 13%;
+    }
+    .forms {
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    /* .tel {
+        padding-bottom: 20%;
+    } */
+
+}
+
+@media screen and (min-width: 500px) {
+    header {
+        padding-bottom: 7%
+    }
+    body {
+        width: 99%;
+    }
+    #pages {
+        padding-left: 40%;
+    }
+    .forms {
+        margin-left: 16.5%;
+        margin-bottom: 5%;
+    }
+    /* .tel {
+        padding-bottom: 0%;
+    } */
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(128, 63, 17);
+    border-radius: 20px;
+    border: 3px solid rgb(128, 63, 17);
+}
+
+footer {
+    color: sandybrown;
+    background-color: rgb(128, 63, 17);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 101.9%;
+    text-align: center
+}
+
+.fa {
+    padding-top: 4%;
+    text-align: center;
+    width: 180px;
+    font-size: +20;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: white;
+}
+
+.face {
+    color: rgba(0, 0, 255, 0.815);
+}
+
+.insta {
+    color: #DA70D6;
+}
+
+.tele {
+    color: deepskyblue;
+}
+
+a:hover {
+    color: white;
+}
+
+.paginas ul li a {
+    color: sandybrown;
+}
+.paginas ul li a:hover {
+    color: rgb(128, 63, 17);
+}
+button:hover {
+    animation-name: rodaroda;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+h1:hover {
+    animation-name: rodaroda;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.miniimg {
+    animation-name: cavalo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+@keyframes rodaroda {
+    from {
+        -webkit-transform: rotate(-10deg)
+    }
+    to {
+        -webkit-transform: rotate(10deg)
+    }
+}
+@keyframes cavalo {
+    from {
+        -webkit-transform: rotate(-5deg)
+    }
+    to {
+        -webkit-transform: rotate(5deg)
+    }
+}
+.foto {
+    padding-left: 30%;
+}
