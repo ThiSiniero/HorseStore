@@ -25,6 +25,7 @@ class CreateLojaModelsTable extends Migration
             $table->float('idade_animal', 100,0);
             $table->string('cor_animal', 150);
             $table->string('sexo_animal', 150);
+            $table->binary('img_animal', 250);
             $table->timestamps();
         });
     }
