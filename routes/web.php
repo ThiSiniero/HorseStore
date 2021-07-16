@@ -24,14 +24,15 @@ Route::get('/notas', function () {
 });
 
 // Loja HorseStore
-Route::get('/loja-comprador', 'LojaController@comprador');
-Route::get('/loja-vendedor', 'LojaController@vendedor');
-Route::post('/loja-vendedor', 'LojaController@store')->name('registrar_cavalo');
+Route::get('/HorseStore', 'LojaController@home');
+Route::get('/HorseStore-comprador', 'LojaController@comprador');
+Route::get('/HorseStore-vendedor', 'LojaController@vendedor');
+Route::post('/HorseStore-vendedor', 'LojaController@store')->name('registrar_cavalo');
 
-Route::get('/loja-comprador/{id}', 'LojaController@show');
+Route::get('/HorseStore-comprador/show/{id}', 'LojaController@show');
 
-Route::get('/loja-comprador/editar/{id}', 'LojaController@edit');
-Route::post('/loja-comprador/editar/{id}', 'LojaController@update')->name('alterar_cavalo');
+Route::get('/HorseStore-comprador/editar/{id}', 'LojaController@edit');
+Route::post('/HorseStore-comprador/editar/{id}', 'LojaController@update')->name('alterar_cavalo');
 
-Route::get('/loja-comprador/excluir/{id}', 'LojaController@delete');
-Route::post('/loja-comprador/excluir/{id}', 'LojaController@destroy')->name('excluir_cavalo');
+Route::get('/HorseStore-comprador/excluir/{id}', 'LojaController@delete');
+Route::post('/HorseStore-comprador/excluir/{id}', 'LojaController@destroy')->name('excluir_cavalo');

@@ -49,10 +49,13 @@
             </div>
             <ul class="nav nav-pills col-lg-3">
                 <li class="nav-item">
-                    <a class="nav-link @yield('navcomp')" href="/loja-comprador">Comprador </a>
+                    <a class="nav-link @yield('homecomp')" href="/HorseStore">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link @yield('navvend')" href="/loja-vendedor">Vendedor</a>
+                    <a class="nav-link @yield('navcomp')" href="/HorseStore-comprador">Comprador </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @yield('navvend')" href="/HorseStore-vendedor">Vendedor</a>
                 </li>
             </ul>
         </nav>

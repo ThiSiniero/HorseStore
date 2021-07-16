@@ -4,12 +4,17 @@ use Illuminate\Http\Request;
 use App\LojaModel;
 
 class LojaController extends Controller {
+    public function home() {
+        return view ('horseStore');
+    }
     public function comprador() {
-        return view ('loja-comprador');
+        $cavalo = LojaModel::all();
+
+        return view('horseStore-comprador', compact('cavalo'));
     }
 
     public function vendedor() {
-        return view ('loja-vendedor');
+        return view ('horseStore-vendedor');
     }
 
     // Adicionar
@@ -27,18 +32,18 @@ class LojaController extends Controller {
                 'sexo_animal'=> $request -> sexo_animal,
                 'img_animal'=> $request -> img_animal,
                 ]);
-        return ("<script>alert('Seu Cavalo foi cadastrado com sucesso, Parabens.')</script> <a href='loja-comprador'>Clique aqui para voltar a loja</a>");
+        return ("<script>alert('Seu Cavalo foi cadastrado com sucesso, Parabens.')</script> <a href='HorseStore-comprador'>Clique aqui para voltar a loja</a>");
         // dd($request-> all());
     }
 
     //Listar
+
     public function show($id) {
         $cavalo=LojaModel::findOrFail($id);
 
         return view('show', ['cavalo'=> $cavalo]);
-
     }
-
+    
     //Editar
     public function edit($id) {
         $cavalo=LojaModel::findOrFail($id);
@@ -61,7 +66,7 @@ class LojaController extends Controller {
             'sexo_animal'=> $request -> sexo_animal,
             'img_animal'=> $request -> img_animal,
         ]);
-        return view("loja-comprador");
+        return view("horseStore-comprador");
     }
 
     //Excluir
@@ -72,6 +77,6 @@ class LojaController extends Controller {
     public function destroy($id) {
         $cavalo =  LojaModel::findOrFail($id);
         $cavalo->delete();
-        return view ('loja-comprador');
+        return view ('horseStore-comprador');
     }
 }

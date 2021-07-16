@@ -199,3 +199,34 @@ th, td {
     padding-right: 35px;
     padding-left: 35px;
 }
+table h {
+    color: rgb(128, 63, 17);
+}
+.vejamais {
+    text-decoration: none;
+    color: sandybrown;
+    border: 1px solid thistle;
+    border-radius: 10px;
+    background-color:snow;
+    padding: 3px;
+    margin-left: 60%;
+}
+.vejamais:hover {
+    background-color: sandybrown;
+    color: white;
+}
+.comp {
+    margin-left: 12%;
+    margin-bottom: 5%;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.61);
+}
+.hlink {
+    text-decoration: none;
+    color: rgb(100, 51, 16);
+    padding: 3%;
+    background-color: sandybrown;
+    border-radius: 35px;
+}
+.hlink:hover {
+    color: black;
+}
